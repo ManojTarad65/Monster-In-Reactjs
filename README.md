@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+ Monster Learning of React js code 
 
-## Getting Started
+ Setup & Structure of react js 
 
-First, run the development server:
+1. Set up -> npx create-next-app@latest
+2. Setup tailwind css ->     npm install tailwindcss @tailwindcss/vite, 
+*     // vite.config.js
+*     import { defineConfig } from 'vite';
+*     import tailwindcss from '@tailwindcss/vite';
+* 
+*     export default defineConfig({
+*       plugins: [
+*         tailwindcss(),
+*       ],
+*     })
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+3. Modules -> modules are which reacts depends on and in furture if you install any npm packages then they are included in this folder
+4. Public folder -> put favicon icon and other icons.
+5. Src -> It is used for for source folder that is help to put all the source of our code
+6. Assets -> it is for images , svgs and other.
+7. App.css and index.css -> style for our UI
+8. App.jsx and main.jsx -> they are component files 
+9. .gitignore -> it is used for GitHub , push our repo to GitHub and it helps to reduce the extra code like node modules folder, etc.
+10. eslint.config.js -> configuration for ES file
+11. Index.html -> write all the html code here
+12. package.json -> it is used for project dependencies and there version that project needs to run 
+13. Package-lock.json -> updated when install modified dependencies 
+14. Readme.md -> notes , purpose and feature of react
+15. Vite.config.js -> configure site file itself 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Remove the unnecessary things in the folder structure 
+1. Public 
+2. Assets
+3. App.css
+4. Remove all the code in app.jsx 
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
